@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.94.2"
+  },
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp"
+  }
+}
