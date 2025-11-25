@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana;
-      overflow: hidden; /* remove scroll vertical */
-    background-image: url("/src/img/2150906164.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    //font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    overflow: hidden; /* remove scroll vertical */
+    background-image: url("/dist/img/2150906164.jpg");
+    //background-image: url("/src/img/2150906164.jpg");
     background-size: cover;
     background-position-x: 40%;
     background-position-y: 50%;
@@ -27,7 +33,7 @@
     position: relative;
     scroll-margin-top: 90px; /* space to 80px on top */
         scroll-margin-left: 0px; /* space to 20px on left */
-            scroll-margin-right: 20px; /* space to 20px on left */
+            scroll-margin-right: 50px; /* space to 20px on left */
     margin-left: 30px;
     margin-right: 50px;
     //behaviors
@@ -38,13 +44,27 @@
     width: 90%;
     height: 87.2vh;
     //Style area
-    background: rgba($color: #94a1a7, $alpha: 0.80);
-    color: rgb(13, 13, 13);
+
+    background: rgba($color: #ece8d6, $alpha: 0.80);
+    box-shadow: #030027 0px 4px 30px;
+    color: #030027;
     align-items: center;
     justify-content: center;
 
     //Internal area
     padding: 24px;
+
+        &--article {
+        text-decoration: none;
+        font-size: 16px;
+        color: #030027;
+        font-weight: bold;
+        padding: 8px 24px;
+        display: block;
+
+        text-align: justify;
+        line-height: 1.5;
+    }
 }
 
     .item h2 {
@@ -69,7 +89,7 @@
         margin: 15px 30%;
         list-style: none;
         padding: 0;
-            background-color: #a0a8c8;
+            background-color: #ece8d6;
             border-radius: 5px;
         z-index: 6;
         border-bottom: 2px solid #0384e6b7;
@@ -83,8 +103,8 @@
 }
     .az__long--lat__a {
     text-decoration: none;
-    font-size: 2vh;
-    color: #161616;
+    font-size: 1em;
+    color: #030027;
     font-weight: bold;
     padding: 5px 8px;
     display: block;
